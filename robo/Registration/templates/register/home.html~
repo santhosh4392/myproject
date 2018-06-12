@@ -1,0 +1,46 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+<a href="{% url 'signup' %}">Go Back</a>
+
+</head>
+<body>
+
+<h1>welcome numpy page</h1>
+
+<p> {{ ctx.a }}</p>
+<p> {{ ctx.b }}</p>
+<p> {{ctx.c}}</p>
+<p> {{ctx.d}}</p>
+
+
+<p> Single Array using pandas</p>
+<p> {{ctx.x}}</p>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+</head>
+<body>
+
+<h1>welcome signup</h1>
+
+{% for user in name  %}
+  <p>{{ user }}</p>
+  
+
+{% endfor %}
+
+
+This is the URL for "contact_us page": <a href="{% url 'contact_us' %}">Click here</a>
+ 
+</body>
+</html>
+
+

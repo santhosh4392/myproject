@@ -1,0 +1,27 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import render
+import numpy as np
+
+
+
+# Create your views here.
+
+def home(request):
+    a=5
+    b="sakthi"
+    c=1.5 
+    d= 0000.2521
+    #x = np.array([1,2,3,4,5,6,7]) 
+    x = np.array([[1,2,3],[4,5,6]])
+    x.shape = (3,2)  
+        அ = a
+
+
+    ctx={'c':c,'a':a, 'b':b,'d':d,'x':x}
+    return render(request, 'register/home.html', {'ctx':ctx})
+
+def signup(request):
+    #return HttpResponse("welcome")
+    return render(request, 'register/signup.html', {})
+

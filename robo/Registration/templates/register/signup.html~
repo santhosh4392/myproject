@@ -1,0 +1,27 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+</head>
+<body>
+
+<h1>welcome signup</h1>
+
+<label>user name</label><br>
+
+<label>phone<label><br>
+
+<label>passowrd<label><br>
+
+<label>co_password</label><br>
+
+
+
+
+</body>
+</html>
+
+
